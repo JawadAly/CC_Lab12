@@ -42,6 +42,10 @@ namespace CC_Lab_12.Controllers
 			{
 				TempData["message"] = "A photo with a office environment suggests that the person has a calm and resilient personality!";
 			}
+			else if (response.userSelectedImage == "image4")
+			{
+				TempData["message"] = "A photo with a bombing scene suggests that the person has a brutal and violent nature!";
+			}
 			return RedirectToAction("Index");
 			
 
