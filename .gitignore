@@ -1,0 +1,89 @@
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+**/packages.config
+project.lock.json
+project.fragment.lock.json
+
+# Microsoft Azure Web Apps publish settings
+PublishProfiles/
+
+# WebServer config
+iisexpress/
+*.vspscc
+*.vssscc
+
+# ASP.NET generated files
+Generated_Code/
+
+# dotnet CLI
+project.lock.json
+project.assets.json
+*.deps.json
+
+# Other files to ignore
+*.log
+*.bak
+*.tmp
+*.dbmdl
+*.db
+
+# Visual Studio 2019/2022 cache
+.vs/
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# TFS
+$tf/
+
+# Environment variables
+.env
+
+# Node modules (if using frontend tools)
+node_modules/
+
+# Logs
+*.log
+
+# Compiled DLLs
+*.dll
+*.exe
+*.pdb
+
+# Webpack/Parcel/Bundling output
+dist/
+build/

@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@Html.Raw(TempData["message"])
+<main>
+    <!-- New Image Selection Form -->
+    @{
+        if (TempData["message"] != null)
+        {
+            <script>
+            alert('@TempData["message"]');
+            </script>
+        }
+    }
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h2>Select Your Favorite Image</h2>
+
+            @using (Html.BeginForm("UserResponseSubmition", "Home", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <div class="form-group">
+                    <label for="selectedImage">Choose an image:</label>
+                    <select name="userSelectedImage" id="selectedImage" class="form-control">
+                        <option value="image1">Image 1</option>
+                        <option value="image2">Image 2</option>
+                        <option value="image3">Image 3</option>
+                    </select>
+                </div>
+
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            }
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="~/Images/image1.jpeg" alt="Image 1" class="img-fluid" width="500" height="500" />
+                </div>
+                <div class="col-md-4">
+                    <img src="~/Images/image2.jpg" alt="Image 2" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                    <img src="~/Images/image3.jpg" alt="Image 3" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
